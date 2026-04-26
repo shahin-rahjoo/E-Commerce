@@ -1,5 +1,5 @@
 import { APP_NAME } from "@/lib/constants";
-import { GithubIcon, LinkedinIcon, InstagramIcon } from "./social-icons";
+import { GithubIcon, LinkedinIcon } from "./social-icons";
 import { Button } from "../ui/button";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
