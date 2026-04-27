@@ -1,5 +1,5 @@
 import Image from "next/image";
-import loader from "@/public/loader.gif";
+import loader from '@/public/images/loader.gif'
 const LoadingSpinner = () => {
   return (
     <div

@@ -23,7 +23,7 @@ const Header = () => {
           </Link>
         </div>
         <div className="space-x-2">
-          <Modeswitcher></Modeswitcher>
+          <Modeswitcher/>
           <Button asChild variant="secondary">
             <Link href="/cart">
               <ShoppingCart /> Cart
