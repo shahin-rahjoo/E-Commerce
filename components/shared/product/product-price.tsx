@@ -4,7 +4,7 @@ const ProducPrice = ({ value }: { value: number }) => {
   return <>
   <p className="text-2xl">
     <span className="text-xs align-super">$</span>
-    <span>{intV}</span>
+    <span className="font-bold">{intV}</span>
     <span className="text-xs align-super">.{floatV}</span>
 
   </p>
