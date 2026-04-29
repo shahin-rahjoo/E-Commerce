@@ -12,8 +12,8 @@ const ProductCard = ({ product }: { product: any }) => {
         <Link href={`/product/${product.slug}`}>
           <Image
             src={product.images[0]}
-            width={350}
-            height={500}
+            width={300}
+            height={300}
             alt={product.name}
             priority={true}
           />
@@ -24,7 +24,8 @@ const ProductCard = ({ product }: { product: any }) => {
         <Link href={`/product/${product.slug}`}>
           <h2 className="font-bold">{product.name}</h2>
         </Link>
-        <div className="flex-between gap-4">
+
+        <div className="flex-between pt-3">
           <p className="font-bold">{product.rating}</p>
           {product.stock > 0 ? (
             <ProducPrice value={product.price} />
