@@ -1,6 +1,7 @@
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import Link from "next/link";
 import Image from "next/image";
+import ProducPrice from "./product-price";
 {
   /*the ProductCard bellow  taking IN(recieving) {product} from product-list component */
 }
@@ -24,9 +25,9 @@ const ProductCard = ({ product }: { product: any }) => {
           <h2 className="font-bold">{product.name}</h2>
         </Link>
         <div className="flex-between gap-4">
-          <p>{product.rating}</p>
+          <p className="font-bold">{product.rating}</p>
           {product.stock > 0 ? (
-            <p className="font-bold">{product.price}</p>
+           <ProducPrice value={product.price}/>
           ) : (
             <p className="text-red-500">Sold Out</p>
           )}
